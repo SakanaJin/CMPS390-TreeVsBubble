@@ -177,7 +177,7 @@ int main(){
     
     tree.add(array, lines);
     int* BubbleSorted = bubble.sort(array, lines);
-    int* TreeSorted = tree.toSortedArray();//too many recursive calls probs
+    int* TreeSorted = tree.toSortedArray();
 
     std::cout << "\nlist sorted with a tree:\n";
     for(i = 0; i < tree.getSize(); i++){
@@ -190,5 +190,4 @@ int main(){
         std::cout << BubbleSorted[i] << " ";
     }
     std::cout << "\nComparisons " << bubble.getComparisonCount() << '\n';
-    //C:\Coding headaches\CMPS 390\CMPS390-TreeVsBubble\src\numbers.txt
 }
